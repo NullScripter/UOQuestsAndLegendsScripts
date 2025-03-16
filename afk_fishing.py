@@ -1,4 +1,4 @@
-__version__ = "1.0"
+__version__ = "1.1"
 from AutoComplete import *
 
 
@@ -24,7 +24,7 @@ FOOTWEAR_SCISSORS = 0x40EED929
 ###################################################################
 # Other settings (do not change unless you know what you are doing)
 FISHING_DELAY = 8500
-DELAY_BETWEEN_ITEM_COLLECTIONS = 30000
+DELAY_BETWEEN_ITEM_COLLECTIONS = 20000
 DRAG_DELAY = 700
 MOVING_DELAY = 500
 TURN_AROUND_TIMER = 60000 * 5 # 5min
