@@ -5,7 +5,7 @@ from AutoComplete import *
 # The pets may wander too far away and miss the auto-feed trigger.
 # This script:
 # 1) Call [CollectItems every 30s, so you are never over item limit and miss power saves.
-# 2) Call [BringInsectoids and feed them every 30min (cost 5k per use) so keep them loyal
+# 2) Call [BringInsectoids and feed them every 30min (cost 5k per use) to keep them loyal
 
 
 # Personal Settings
