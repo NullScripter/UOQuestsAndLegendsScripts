@@ -1,4 +1,4 @@
-__version__ = "3.0"
+__version__ = "1.0"
 from AutoComplete import *
 
 # Script to AFK while Evo Insectoid collect resouces on open areas.
@@ -13,7 +13,7 @@ PORTABLE_PET_FEEDER = 0x4106E4EB
 
 # Script
 while True:
-    Player.ChatSay(89, '[Collectitems')
+    Player.ChatSay(89, '[CollectItems')
     Misc.Pause(30000)
         
     if not Timer.Check('FeedTimer'):
