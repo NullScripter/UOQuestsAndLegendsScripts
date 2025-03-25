@@ -1,4 +1,4 @@
-__version__ = "1.1"
+__version__ = "1.2"
 from AutoComplete import *
 
 
@@ -62,6 +62,6 @@ while True:
     Journal.Clear()
     FishRelative(relative_tile=-4) # Alternate fishign North/South capturing 2 veins
    
-    if not Journal.Search('biting here'): 
+    if Journal.Search('biting here'): 
         MoveBoatAhead(tiles=8) # Move 1 vein ahead
     
