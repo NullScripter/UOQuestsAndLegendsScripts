@@ -4,8 +4,8 @@ import random
 
 # Script to mine a whole cave/area.
 # The script automatically move, mine, and search/queue nearby tiles to 
-# mine. The accounts for the grid/vein size and if tile coloring is turned on,
-# it will color queued to visit as green, mined tiles as red, and ignored tiles
+# mine. It accounts for the grid/vein size and if tile coloring is turned on,
+# it will color queued tiles to visit as green, mined tiles as red, and ignored tiles
 # as yellow (a tile is ignored if a tile in the same vein was fully mined)
 
 
@@ -15,7 +15,7 @@ ENABLE_TILE_COLORING = True
 MINE_DIRT_TILES = False
 MINE_SAND_TILES = False
 
-# Regular Shovel = (0x0F39, 0), Garg Right (0x0E86, 0x076c)
+# Regular Shovel = (0x0F39, 0), Garg Tool pointing right = (0x0E86, 0x076c)
 SHOVEL_ID = 0x0F39 
 SHOVEL_COLOR = 0
 
