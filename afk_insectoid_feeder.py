@@ -2,14 +2,14 @@ __version__ = "1.0"
 from AutoComplete import *
 
 # Script to AFK while Evo Insectoid collect resouces on open areas.
-# The pets may wander too far away and miss the auto-feed trigger.
+# Motivation: pets may wander too far away and miss the auto-feed trigger.
 # This script:
-# 1) Call [CollectItems every 30s, so you are never over item limit and miss power saves.
-# 2) Call [BringInsectoids and feed them every 30min (cost 5k per use) to keep them loyal
+# 1) Call [CollectItems every 30s, so you are never over the item limit and miss power saves.
+# 2) Call [BringInsectoids and feed them every 30min (cost 5k per use) to keep them loyal/fed
 
-
-# Personal Settings
+# Personal Settings (change to yours!!)
 PORTABLE_PET_FEEDER = 0x4106E4EB
+
 
 # Script
 while True:
