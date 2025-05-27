@@ -8,6 +8,9 @@ import re
 # total bytes, and bytes per second, as well as the top 25 packets based on the 
 # total bytes size exchanged.
 
+# Tested on: RazorEnchanced v0.8.2.242; UO Quest and Legends (May 24th 2025) 
+# Can be set to start on login (will pause after the TIMER / 5s default)
+
 LOG_FOLDER = r'D:\Games\UO Tools\TazUO.Launcher\TazUO\Data\Plugins\RazorEnhanced-0.8.2.115\Scripts\log'
 LOG_FILE = LOG_FOLDER + 'packets.log'
 TIMER = 5000 # in miliseconds
