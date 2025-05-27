@@ -8,6 +8,10 @@ import random
 # it will color queued tiles to visit as green, mined tiles as red, and ignored tiles
 # as yellow (a tile is ignored if a tile in the same vein was fully mined)
 
+# Tested on: RazorEnchanced v0.8.2.242; UO Quest and Legends (April 3rd 2025) 
+# Start the script manually. It is not not advisible for full AFK, as the char
+# may get stuck on some pathfinding inside certain caves.
+
 
 # Personal Settings (change it to yours)
 ENABLE_TILE_COLORING = True
