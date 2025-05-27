@@ -1,4 +1,4 @@
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 
 # Combat Script for spell casting rotation (not begginer friendly)
 # WARNING: You will need to incorporate your own mana recovery of choice to the script 
@@ -134,8 +134,7 @@ def BuffRotation():
 
 def Main():
     Misc.Pause(1000) # Small delay in case of start on login
-    Player.WeaponPrimarySA() # Set a special to reset any 'ghost' value in the client from disconnect and reconnect
-
+    
     spell_idex = 0
     while Player.Connected:
         enemies = GetNearbyEnemies(ENEMY_LOOKUP_RANGE)
