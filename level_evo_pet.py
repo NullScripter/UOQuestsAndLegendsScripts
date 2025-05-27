@@ -5,8 +5,10 @@ import re
 # Script to cast spells on the pet to level it.
 # Optional 1) Can apply 'half level deed' when the pet reaches lvl 2000 
 # Optional 2) Can use 'reset power hour deed' and start power hour
-# (The script checks for pet lvl and if you have pewer active to avoid wasting
+# (The script checks for pet lvl and if you have power hour active to avoid wasting
 # deeds. The deeds need to be anywhere in your backpack, including inner bags)
+
+# Tested on: RazorEnchanced v0.8.2.242; UO Quest and Legends (April 3rd 2025) 
 
 # Personal Settings
 PET_SERIAL = 0x000661DC 
