@@ -1,10 +1,9 @@
 __version__ = "1.0.0"
 
 # Combat Script to auto-attack nearby monsters in range.
-# It keep buffs active, use specials, and use bandages/heal when needed. 
+# It keeps buffs active, use specials, and use bandages when needed. 
 # The script will run forever (until you manually pause it) and you can set it to start on login. 
 # Tested on: RazorEnchanced v0.8.2.242; UO Quest and Legends (May 24th 2025) 
-
 
 # Personal Settings (change to yours!)
 MAIN_WEAPON = 0x4056A181 
@@ -41,7 +40,9 @@ BUFF_SETTINGS = {
 }
 
 
-### Main Script ###
+####################################################################
+### Main Script (dont change unless you know what you are doing) ###
+
 from AutoComplete import *
 from System.Collections.Generic import List
 from System import Byte
