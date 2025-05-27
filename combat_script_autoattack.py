@@ -1,4 +1,4 @@
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 # Combat Script to auto-attack nearby monsters in range.
 # It keeps buffs active, use specials, and use bandages when needed. 
@@ -126,10 +126,13 @@ def Main():
     Player.WeaponPrimarySA() # Set a special to reset any 'ghost' value in the client from disconnect and reconnect
 
     while Player.Connected:
+        while Player.IsGhost: Misc.Pause(500) # Pause while dead
+            
         enemies = GetNearbyEnemies(WEAPON_RANGE)
         enemy = enemies[0] if len(enemies) > 0 else None
         
         while enemy and Player.DistanceTo(enemy) <= WEAPON_RANGE: # Keep atking the same enemy
+            while Player.IsGhost: Misc.Pause(500) # Pause while dead
             monster = Mobiles.FindBySerial(enemy.Serial) # To confirm enemy is still alive
             if monster is None: break
              
