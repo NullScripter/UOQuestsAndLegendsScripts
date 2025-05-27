@@ -5,7 +5,7 @@ __version__ = "1.0.1"
 # on your own, otherwise just use Wraith Form (way too many mana regen options to generalize).
 # Check line 104 if you want to add your buff/logic for it.
 
-# 1) The script will keep buffs active (check BUFF_SETTINGS at line 25 to tuen them on/off)
+# 1) The script will keep buffs active (check BUFF_SETTINGS at line 25 to turn them on/off)
 # 2) The script will use the combat spell if an enemy is nearby (check SPELL_ROTATION at line 46). 
 # 3) The script will run forever (until you manually pause it) and you can set it to start on login.
 # Tested on: RazorEnchanced v0.8.2.242; UO Quest and Legends (May 24th 2025) 
