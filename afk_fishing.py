@@ -12,6 +12,8 @@ from AutoComplete import *
 # The player will yell the boat to move forward when fish stops bitting and to turn around
 # if they get past the X coordinates set.
 
+# Tested on: RazorEnchanced v0.8.2.242; UO Quest and Legends (April 3rd 2025) 
+
 # Personal Settings
 FISHING_POLE = 0x408577AC
 EASTMOST_X = 960
