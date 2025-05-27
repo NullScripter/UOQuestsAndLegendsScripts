@@ -46,7 +46,7 @@ class SpellSetting():
 SPELL_ROTATION = [ 
     # Example 1) Mage Rotation
     SpellSetting('Fireball', target_enemy=True), # Fireball will wait for targeting and target the enemy 
-    SpellSetting('Wither', cast_delay=500), # Thunderstorm has no target - will wait its 0.5 casting time
+    SpellSetting('Wither', cast_delay=500), # Wither has no target - will wait its 0.5 casting time
 
     # Example 2) Spellweaver Rotation
     SpellSetting('Thunderstorm', cast_delay=500), # Thunderstorm has no target - will wait its 0.5 casting time
