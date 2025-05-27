@@ -1,4 +1,4 @@
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 # Combat Script for spell casting rotation (not begginer friendly)
 # WARNING: You will need to incorporate your own mana recovery of choice to the script 
@@ -143,7 +143,7 @@ def Main():
         
         BuffRotation() # Check buffs before anything
 
-        if not enemy: # Pause if no enemy nearby
+        if not enemy or Player.IsGhost: # Pause if no enemy nearby or dead
             Misc.Pause(500)
             continue
 
