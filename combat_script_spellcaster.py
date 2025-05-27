@@ -1,29 +1,28 @@
 __version__ = "1.0.0"
 
-# Combat Script for spell casting rotation.
-# WARNING: You will need to incorporate your mana recovery of choice to the script 
-# on your own, otherwise just use Wraith Form (way too many mana regen options to generalize). 
+# Combat Script for spell casting rotation (not begginer friendly)
+# WARNING: You will need to incorporate your own mana recovery of choice to the script 
+# on your own, otherwise just use Wraith Form (way too many mana regen options to generalize).
+# Check line 104 if you want to add your buff/logic for it.
 
-# The script will keep buffs active and use bandages/heal when needed. 
-# The script will run forever (until you manually pause it) and you can set it to start on login.
+# 1) The script will keep buffs active (check BUFF_SETTINGS at line 25 to tuen them on/off)
+# 2) The script will use the combat spell if an enemy is nearby (check SPELL_ROTATION at line 46). 
+# 3) The script will run forever (until you manually pause it) and you can set it to start on login.
 # Tested on: RazorEnchanced v0.8.2.242; UO Quest and Legends (May 24th 2025) 
-
-# Set the spells you want to use in SPELL_ROTATION (line 47). 
-
 
 # Personal Settings (change to yours!)
 ENEMY_LOOKUP_RANGE = 10 
 ATTACK_INNOCENTS = False  # Change to True to attack blues (e.g. for Twalo and Lord Oaks)
 
 MANA_RESERVE = 55  # Wont use specials/spells if below this value 
-HITPOINTS_PERCENT_TO_HEAL = 0.7
+HITPOINTS_PERCENT_TO_HEAL = 0.8
 STAMINA_PERCENT_TO_DIVINE_FURY = 0.2
 
 ADDITIONAL_DELAY = 100 # Increase/reduce this value based on your ping. 
 # If you are getting 'already casting' messages, it means you need to increase this value.
-# (The ADDITIONAL_DELAY is added on top of the expected spell casting time, when relevant)
+# (The ADDITIONAL_DELAY is added on top of the expected spell casting time when relevant)
 
-BUFF_SETTINGS = {
+BUFF_SETTINGS = { 
     # Forms
     'Vampiric Embrance': False, 
     'Wraith Form': False, 
@@ -64,8 +63,9 @@ SPELL_ROTATION = [
 ] 
 
 
-#######################
-##### Main Script #####
+
+####################################################################
+### Main Script (dont change unless you know what you are doing) ###
 
 from AutoComplete import *
 from System.Collections.Generic import List
