@@ -7,6 +7,8 @@ from AutoComplete import *
 # 1) Call [CollectItems every 30s, so you are never over the item limit and miss power saves.
 # 2) Call [BringInsectoids and feed them every 30min (cost 5k per use) to keep them loyal/fed
 
+# Tested on: RazorEnchanced v0.8.2.242; UO Quest and Legends (May 26th 2025) 
+
 # Personal Settings (change to yours!!)
 PORTABLE_PET_FEEDER = 0x4106E4EB
 
