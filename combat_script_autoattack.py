@@ -123,8 +123,7 @@ def SpellPriorityRotation():
 
 def Main():
     Misc.Pause(1000) # Small delay in case of start on login
-    Player.WeaponPrimarySA() # Set a special to reset any 'ghost' value in the client from disconnect and reconnect
-
+    
     while Player.Connected:
         while Player.IsGhost: Misc.Pause(500) # Pause while dead
             
